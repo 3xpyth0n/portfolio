@@ -4,7 +4,7 @@ email: "idrissisaad340@gmail.com"
 baseurl: "/portfolio"
 url: "https://3xpyth0n.github.io"
 
-remote_theme: "mmistakes/minimal-mistakes@4.27.0"
+remote_theme: "mmistakes/minimal-mistakes@3.4.0"
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
