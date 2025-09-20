@@ -1,14 +1,11 @@
 ---
-layout: home
-title: "Bienvenue"
-hero:
-  name: "Saad Idrissi"
-  tagline: "Étudiant en cybersécurité | Futur consultant Red Team"
+layout: page
+title: "Saad Idrissi — Portfolio Étudiant"
 ---
 
 # 👋 Salut, moi c’est Saad Idrissi
 
-Étudiant en cybersécurité | Futur consultant Red Team spécialisé dans le luxe digital
+Étudiant en cybersécurité | Futur consultant Red Team spécialisé dans le luxe digital.  
 
 Actuellement en **Bac+2 à Diginamic**, je me prépare à intégrer le **Bachelor en Cybersécurité d'Ynov** à la rentrée 2026.  
 Mon objectif est de devenir consultant Red Team, en me spécialisant dans la sécurisation des environnements numériques du secteur du luxe.
@@ -53,7 +50,7 @@ Mon objectif est de devenir consultant Red Team, en me spécialisant dans la sé
 **Ynov – Bachelor en Cybersécurité (prévu)**  
 *Rentrée 2026*
 
-- Formation axée sur la cybersécurité, incluant cryptographie, protection des réseaux et méthodes de prévention des cyberattaques
+- Formation axée sur la cybersécurité : cryptographie, protection des réseaux et prévention des cyberattaques
 - Développement des compétences nécessaires pour sécuriser des infrastructures numériques vitales
 - Possibilité d'alternance pour une immersion professionnelle dès la troisième année
 
