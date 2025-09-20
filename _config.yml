@@ -1,8 +1,0 @@
-title: "Saad Idrissi — Portfolio Étudiant"
-email: "idrissisaad340@gmail.com"
-description: "Portfolio étudiant cybersécurité : compétences, projets et contact"
-baseurl: "/portfolio"
-url: "https://3xpyth0n.github.io"
-remote_theme: pages-themes/cayman@v0.2.0
-plugins:
-- jekyll-remote-theme
