@@ -1,16 +1,14 @@
+# Informations de base
 title: "Saad Idrissi — Portfolio Étudiant"
 description: "Portfolio étudiant cybersécurité : compétences, projets et contact"
 email: "idrissisaad340@gmail.com"
-baseurl: "/portfolio"
+baseurl: "/portfolio" # laisse tel quel si ton dépôt s'appelle portfolio
 url: "https://3xpyth0n.github.io"
 
-remote_theme: "mmistakes/minimal-mistakes@3.4.0"
-plugins:
-  - jekyll-remote-theme
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
+# Thème officiel GitHub Pages
+theme: jekyll-theme-cayman
 
+# Auteur et réseaux sociaux
 author:
   name: "Saad Idrissi"
   email: "idrissisaad340@gmail.com"
@@ -19,12 +17,19 @@ social:
   github: "3xpyth0n"
   linkedin: "saaddrs"
 
+# Défaut des pages
 defaults:
   -
     scope:
       path: ""
       type: "pages"
     values:
-      layout: "single"
+      layout: "page"
       author_profile: true
+
+# Plugins officiels GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
