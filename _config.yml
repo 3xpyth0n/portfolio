@@ -1,28 +1,24 @@
-# Site settings
 title: "Saad Idrissi — Portfolio Étudiant"
 description: "Portfolio étudiant cybersécurité : compétences, projets et contact"
 email: "idrissisaad340@gmail.com"
 baseurl: "/portfolio"
-²url: "https://3xpyth0n.github.io"
+url: "https://3xpyth0n.github.io"
 
-# Theme
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.27.0"
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Author
 author:
   name: "Saad Idrissi"
   email: "idrissisaad340@gmail.com"
 
-# Social links
 social:
   github: "3xpyth0n"
   linkedin: "saaddrs"
 
-# Defaults for pages
 defaults:
   -
     scope:
@@ -31,3 +27,4 @@ defaults:
     values:
       layout: "single"
       author_profile: true
+
