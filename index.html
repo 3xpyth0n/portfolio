@@ -1,143 +1,141 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saad Idrissi — Portfolio Étudiant</title>
-  <style>
-    /* Reset et style global */
-    body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    a { color: #157878; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    h1, h2, h3 { color: #157878; }
-    hr { border: none; border-top: 2px solid #ddd; margin: 2rem 0; }
-
-    /* Conteneur */
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-      background: #fff;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      border-radius: 8px;
-    }
-
-    /* Sections */
-    section { margin-bottom: 2rem; }
-
-    /* Compétences / liste */
-    ul { list-style-type: none; padding-left: 0; }
-    li::before { content: "• "; color: #157878; }
-
-    /* Boutons */
-    .btn {
-      display: inline-block;
-      padding: 0.5rem 1rem;
-      background-color: #157878;
-      color: #fff;
-      border-radius: 4px;
-      margin-top: 0.5rem;
-    }
-    .btn:hover { background-color: #0f5656; }
-
-    /* Footer */
-    footer { text-align: center; font-size: 0.9rem; margin-top: 2rem; color: #555; }
-
-    @media (max-width: 600px) {
-      .container { padding: 1rem; }
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saad Idrissi — Portfolio étudiant & candidature</title>
+  <meta name="description" content="Saad Idrissi — Étudiant en cybersécurité. Parcours, compétences, projets et contact pour candidature Bachelor 3 Ynov 2026." />
+  <meta name="author" content="Saad Idrissi" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Saad Idrissi — Portfolio étudiant" />
+  <meta property="og:description" content="Étudiant en cybersécurité • Futur Red Team consultant. Voir projets, compétences et CV." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://3xpyth0n.github.io/portfolio/" />
+  <link rel="icon" href="assets/images/favicon.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Saad Idrissi</h1>
-      <p>Étudiant en cybersécurité | Futur consultant Red Team spécialisé dans le luxe digital</p>
-    </header>
+  <header class="site-header" role="banner">
+    <div class="wrap">
+      <a class="brand" href="#top">Saad Idrissi</a>
+      <nav class="main-nav" role="navigation" aria-label="Navigation principale">
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" aria-label="Basculer thème">🌙</button>
+      </nav>
+    </div>
+  </header>
 
-    <section id="about">
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <h1>Saad Idrissi</h1>
+          <p class="tagline">Étudiant en cybersécurité • Futur consultant Red Team (spécialisation luxe digital)</p>
+          <p class="lead">Actuellement en <strong>Bac+2 à Diginamic</strong>. Candidat Bachelor 3 Cybersécurité — Ynov (rentrée 2026). Je construis des compétences pratiques en pentest, administration système et automatisation.</p>
+          <p class="cta">
+            <a class="btn" href="assets/CV_Saad_Idrissi.pdf" download>🔽 Télécharger mon CV</a>
+            <a class="btn ghost" href="https://github.com/3xpyth0n/writeups" target="_blank" rel="noopener">Voir mes writeups (hobby)</a>
+          </p>
+        </div>
+        <div class="hero-media">
+          <!-- Place /assets/images/profile.jpg (200x200 ou carré) -->
+          <img src="assets/images/profile.jpg" alt="Photo de Saad Idrissi" class="avatar" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="wrap card">
       <h2>À propos</h2>
-      <p>Actuellement en <strong>Bac+2 à Diginamic</strong>, je me prépare à intégrer le <strong>Bachelor en Cybersécurité d'Ynov</strong> à la rentrée 2026.</p>
-      <p>Mon objectif est de devenir consultant Red Team, spécialisé dans la sécurisation des environnements numériques du secteur du luxe.</p>
+      <p>Je prépare un <strong>Bac+2 Technicien Systèmes et Réseaux</strong> (Diginamic) et vise le Bachelor Cybersécurité d'Ynov en 2026. Ma pratique : labs TryHackMe, CTFs, scripting et administration Linux/Windows. Objectif : devenir un consultant Red Team spécialisé dans la sécurisation des environnements numériques du secteur du luxe.</p>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="wrap">
       <h2>🔧 Compétences</h2>
-      <h3>Systèmes & Réseaux</h3>
-      <ul>
-        <li>Linux, Windows Server, Active Directory</li>
-        <li>TCP/IP, VPN, pare-feu</li>
-      </ul>
-      <h3>Pentesting & Sécurité</h3>
-      <ul>
-        <li>Nmap, Metasploit, Burp Suite, Wireshark</li>
-        <li>Analyse de vulnérabilités</li>
-      </ul>
-      <h3>Scripting & Automatisation</h3>
-      <ul>
-        <li>Bash, Python</li>
-        <li>Scripts pour tâches administratives</li>
-      </ul>
-      <h3>Virtualisation & Cloud</h3>
-      <ul>
-        <li>VirtualBox, Hyper-V, Docker</li>
-      </ul>
-      <h3>Langues</h3>
-      <ul>
-        <li>Français : C2</li>
-        <li>Anglais : C1</li>
-        <li>Espagnol : A2</li>
-        <li>Italien : C2</li>
-      </ul>
+      <div class="grid-3">
+        <div class="skill-card">
+          <h3>Systèmes & Réseaux</h3>
+          <ul class="skill-list">
+            <li>Linux & Windows Server</li>
+            <li>Active Directory</li>
+            <li>TCP/IP, VPN, pare-feu</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Pentest & Sécurité</h3>
+          <ul class="skill-list">
+            <li>Nmap, Metasploit, Burp Suite</li>
+            <li>Wireshark, analyse réseau</li>
+            <li>Audit & remédiation</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Scripting & Cloud</h3>
+          <ul class="skill-list">
+            <li>Bash, Python</li>
+            <li>Automation (scripts)</li>
+            <li>Docker, virtualisation</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 style="margin-top:1.2rem">Niveaux (indication)</h3>
+      <div class="skill-bars">
+        <div class="bar"><span class="label">Linux</span><progress value="85" max="100"></progress></div>
+        <div class="bar"><span class="label">Windows / AD</span><progress value="75" max="100"></progress></div>
+        <div class="bar"><span class="label">Pentest Web</span><progress value="70" max="100"></progress></div>
+        <div class="bar"><span class="label">Scripting (Python)</span><progress value="60" max="100"></progress></div>
+      </div>
     </section>
 
-    <section id="education">
-      <h2>🎓 Parcours académique</h2>
-      <p><strong>Diginamic – Bac+2 Technicien Systèmes et Réseaux</strong> (Janvier 2025 – Juin 2026)</p>
-      <ul>
-        <li>Mise en place d'une infrastructure complète : serveurs, clients, réseau et virtualisation</li>
-        <li>Automatisation des tâches à l'aide de scripts</li>
-        <li>Maintien et sécurisation des accès internet et connexions des réseaux</li>
-        <li>Exploitation et maintenance des services de déploiement des postes de travail</li>
-      </ul>
-      <p><strong>Ynov – Bachelor en Cybersécurité (prévu)</strong> (Rentrée 2026)</p>
-      <ul>
-        <li>Formation axée sur la cybersécurité : cryptographie, protection des réseaux et prévention des cyberattaques</li>
-        <li>Développement des compétences nécessaires pour sécuriser des infrastructures numériques vitales</li>
-        <li>Possibilité d'alternance pour immersion professionnelle dès la troisième année</li>
-      </ul>
+    <section id="projects" class="wrap card">
+      <h2>🛡️ Projets & réalisations</h2>
+      <div class="projects-grid">
+        <!-- Card 1 -->
+        <article class="project">
+          <h3>Writeups TryHackMe</h3>
+          <p>Collection de writeups : analyse méthodique, commandes, remédiation. (Hobby & apprentissage)</p>
+          <p><a class="btn" href="https://github.com/3xpyth0n/writeups" target="_blank" rel="noopener">Voir le repo</a></p>
+        </article>
+
+        <!-- Card 2 (exemple) -->
+        <article class="project">
+          <h3>Projet fil rouge — Infrastructure</h3>
+          <p>Mise en place d'une infra complète (serveurs, réseau, virtualisation) — script de déploiement et sauvegarde.</p>
+          <p><a class="btn ghost" href="#" aria-disabled="true">Détail (bientôt)</a></p>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="project">
+          <h3>Scripts d'automatisation</h3>
+          <p>Scripts Bash/Python pour tâches d'administration : sauvegardes, scan réseau, génération de rapports.</p>
+          <p><a class="btn ghost" href="#" aria-disabled="true">Détail (bientôt)</a></p>
+        </article>
+      </div>
+      <p class="muted">Tu peux ajouter des fiches projet détaillées dans `projects/` plus tard ; je peux te générer le template.</p>
     </section>
 
-    <section id="projects">
-      <h2>🛡️ Projets personnels</h2>
-      <ul>
-        <li><strong>Writeups TryHackMe</strong> : <a href="https://github.com/3xpyth0n/writeups">Voir repo</a></li>
-        <li><strong>CTFs & Bug Bounty</strong> : Participation à des compétitions pour affiner mes compétences</li>
-        <li><strong>Scripts & Automatisation</strong> : Développement de scripts pour automatiser des tâches</li>
-      </ul>
-    </section>
-
-    <section id="contact">
+    <section id="contact" class="wrap card">
       <h2>📬 Contact</h2>
-      <ul>
-        <li>Email : <a href="mailto:idrissisaad340@gmail.com">idrissisaad340@gmail.com</a></li>
-        <li>LinkedIn : <a href="https://linkedin.com/in/saaddrs">saaddrs</a></li>
-        <li>GitHub : <a href="https://github.com/3xpyth0n">3xpyth0n</a></li>
-        <li>CV : <a href="assets/CV_Saad_Idrissi.pdf" class="btn">Télécharger mon CV</a></li>
+      <ul class="contact-list">
+        <li><strong>Email :</strong> <a href="mailto:idrissisaad340@gmail.com">idrissisaad340@gmail.com</a></li>
+        <li><strong>LinkedIn :</strong> <a href="https://linkedin.com/in/saaddrs" target="_blank" rel="noopener">saaddrs</a></li>
+        <li><strong>GitHub :</strong> <a href="https://github.com/3xpyth0n" target="_blank" rel="noopener">3xpyth0n</a></li>
+        <li><strong>Localisation :</strong> Montpellier, 34</li>
       </ul>
+      <p class="muted">Pour candidatures : indique en objet « Candidature Bachelor Ynov 2026 - Saad Idrissi ».</p>
     </section>
 
-    <footer>
-      <p>© 2025 Saad Idrissi — Portfolio étudiant</p>
+    <footer class="site-footer">
+      <div class="wrap">
+        <small>© 2025 Saad Idrissi — Portfolio étudiant • Built as static site for GitHub Pages</small>
+      </div>
     </footer>
-  </div>
+  </main>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
 
